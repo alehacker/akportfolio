@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+.home{
+   background-color: aliceblue;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+   align-items: flex-start;
+   display: flex;
+   gap: 12px;
+   height: 25vh;
+   justify-content: flex-end;
+   position: relative;
+   width: fit-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-link{
+   color: black;
+   font-family: 'Maven Pro', Helvetica;
+   font-size: 20px;
+   font-weight: 700;
+   height: 30px;
+   letter-spacing: 0;
+   line-height: normal;
+   margin-top: -1px;
+   position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo{
+   height: 126px;
+   left: 0;
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   width: 132px;
 }
 
-.App-link {
-  color: #61dafb;
+/* .info{
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   gap: 19px;
+   height: 272px;
+   padding: 0px 0px 47px;
+   position: relative;
+   width: fit-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myname{
+   color: black;
+   font-family: 'Maven Pro', Helvetica;
+   font-size: 36px;
+   font-weight: 700;
+   left:0;
+   letter-spacing: 0;
+   line-height: normal;
+   position: absolute;
+   top: 0;
+   width: 422px;
 }
+
+.myselfp{
+   color: black;
+   font-family: 'Maven Pro', Helvetica;
+   font-size: 20px;
+   font-weight: 400;
+   left:0;
+   letter-spacing: 0;
+   line-height: 25px;
+   position: absolute;
+   top: 0;
+   width: 493px;
+} */
+
+.info {
+   font-family: 'Maven Pro', sans-serif;
+   color: black;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 50vh;
+ }
+ 
+ .myname {
+   margin-bottom: 10px;
+ }
+ 
+ .myselfp {
+   margin-top: 0;
+   width: 50vw;
+ }
+ 
