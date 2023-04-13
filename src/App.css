@@ -5,91 +5,33 @@
    justify-content: center;
    width: 100%;
 }
-
-.navbar{
-   align-items: flex-start;
+.home {
+   /* Set a default flex-direction of row */
    display: flex;
-   gap: 12px;
-   height: 25vh;
-   justify-content: flex-end;
-   position: relative;
-   width: fit-content;
-}
-
-.navbar-link{
-   color: black;
-   font-family: 'Maven Pro', Helvetica;
-   font-size: 20px;
-   font-weight: 700;
-   height: 30px;
-   letter-spacing: 0;
-   line-height: normal;
-   margin-top: -1px;
-   position: relative;
-}
-
-.logo{
-   height: 126px;
-   left: 0;
-   object-fit: cover;
-   position: absolute;
-   top: 0;
-   width: 132px;
-}
-
-/* .info{
-   display: flex;
-   align-items: flex-start;
-   flex-direction: column;
-   gap: 19px;
-   height: 272px;
-   padding: 0px 0px 47px;
-   position: relative;
-   width: fit-content;
-}
-
-.myname{
-   color: black;
-   font-family: 'Maven Pro', Helvetica;
-   font-size: 36px;
-   font-weight: 700;
-   left:0;
-   letter-spacing: 0;
-   line-height: normal;
-   position: absolute;
-   top: 0;
-   width: 422px;
-}
-
-.myselfp{
-   color: black;
-   font-family: 'Maven Pro', Helvetica;
-   font-size: 20px;
-   font-weight: 400;
-   left:0;
-   letter-spacing: 0;
-   line-height: 25px;
-   position: absolute;
-   top: 0;
-   width: 493px;
-} */
-
-.info {
-   font-family: 'Maven Pro', sans-serif;
-   color: black;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+   flex-direction: row;
    align-items: center;
-   height: 50vh;
+   justify-content: center;
  }
  
- .myname {
-   margin-bottom: 10px;
+ /* Apply styles for screens smaller than 768px */
+ @media (max-width: 767px) {
+   .home {
+     /* Change the flex-direction to column */
+     flex-direction: column;
+   }
+ 
+   /* Adjust the margin and width of the image in the .akphoto div */
+   .akphoto img {
+     max-width: 100%;
+     margin-top: 1rem;
+   }
  }
  
- .myselfp {
-   margin-top: 0;
-   width: 50vw;
+ /* Apply styles for screens larger than 1024px */
+ @media (min-width: 1025px) {
+   /* Add some space between each section of the home container */
+   .home > * {
+     margin: 0 2rem;
+   }
  }
  
