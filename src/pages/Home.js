@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-   <>
+   <div className='mt-60'>
 
-      <div id='MainInfo' className="flex flex-col p-4 home bg-aliceblue md:p-10 md:flex-row md:items-center md:justify-center">
+      <div id='MainInfo' className="flex flex-col p-4 mt-56 home bg-aliceblue md:p-10 md:flex-row md:items-center md:justify-center">
          <div className="flex flex-col info md:p-10 md:justify-center ">
             <h1 className="text-4xl font-bold leading-tight myname md:leading-normal">I am Alejandra Kennedy</h1>
             <p className="mt-4 text-2xl leading-normal myselfp md:mt-6">I am a web developer with an Industrial Engineering background, proficient in JavaScript, CSS, HTML, and React. My experience as a teacher has taught me the importance of collaboration, communication, and adaptability. My goal is to leverage my skills to be a hardworking asset to any team, while also continuing to grow as a web developer</p>
@@ -106,7 +106,7 @@ function Home() {
 
 
 
-   </>
+   </div>
 
   )
 }
