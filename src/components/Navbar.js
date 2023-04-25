@@ -15,7 +15,7 @@ function Navbar() {
          <ScrollLink className='mr-6 text-lg text-gray-700 hover:text-indigo-600' to='projects' smooth={true} duration={500}>
             Projects
          </ScrollLink>
-         <ScrollLink className='text-lg text-gray-700 hover:text-indigo-600' to='contact-section' smooth={true} duration={500}>
+         <ScrollLink className='text-lg text-gray-700 hover:text-indigo-600' to='contact' smooth={true} duration={500}>
             Contact
          </ScrollLink>
       </div>
@@ -31,5 +31,4 @@ function Navbar() {
 }
 
 export default Navbar;
-
 

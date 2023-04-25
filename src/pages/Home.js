@@ -1,7 +1,23 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+ 
 
 function Home() {
+   const form = useRef();
+   
+   const sendEmail = (e) => {
+     e.preventDefault(); // prevents the page from reloading when you hit “Send”
+   
+     emailjs.sendForm('service_w4z1kst', 'template_1toztug', form.current, 'XURGSFAu2BrpOMaWQ')
+       .then((result) => {
+           // show the user a success message
+       }, (error) => {
+           // show the user an error
+       });
+   };
+   
   return (
    <div className='mt-60'>
 
@@ -104,8 +120,45 @@ function Home() {
          </div> 
       </div>
 
+      {/* <div class=" flex flex-row justify-space  gap-3 home bg-aliceblue md:p-10 md:flex-row md:items-center md:justify-center">
+         <div className='flex flex-col'>
+             <img className='mb-1 h-34' src='/images/aklogo.png' alt='Logo' />
+             
+         </div>
+         <form class="flex flex-col space-y-4" ref={form} onSubmit={sendEmail}>  
+            <label class="text-gray-700 font-semibold" for="user_name">Name</label>
+            <input class="border border-gray-400 rounded-lg py-2 px-3" type="text" id="user_name" name="user_name" required />
 
+            <label class="text-gray-700 font-semibold" for="user_email">Email</label>
+            <input class="border border-gray-400 rounded-lg py-2 px-3" type="email" id="user_email" name="user_email" required />
 
+            <label class="text-gray-700 font-semibold" for="message">Message</label>
+            <textarea class="border border-gray-400 rounded-lg py-2 px-3" id="message" name="message" required></textarea>
+
+            <button class="px-4 py-2 font-bold text-white bg-black border-black rounded hover:bg-transparent hover:text-black hover:border" type="submit">Contact Me</button>
+         </form>
+         
+      </div>
+   </div> */}
+
+   <div className="flex flex-row gap-3 justify-space home bg-aliceblue md:p-10 md:flex-row md:items-center md:justify-center">
+      <div className='flex flex-col'>
+         <img className='mb-1 h-34' src='/images/aklogo.png' alt='Logo' />
+      </div>
+      
+      <form className="flex flex-col flex-1 space-y-4" ref={form} onSubmit={sendEmail}>  
+         <label className="font-semibold text-gray-700" for="user_name">Name</label>
+         <input className="px-3 py-2 border border-gray-400 rounded-lg" type="text" id="user_name" name="user_name" required />
+
+         <label className="font-semibold text-gray-700" for="user_email">Email</label>
+         <input className="px-3 py-2 border border-gray-400 rounded-lg" type="email" id="user_email" name="user_email" required />
+
+         <label className="font-semibold text-gray-700" for="message">Message</label>
+         <textarea className="px-3 py-2 border border-gray-400 rounded-lg" id="message" name="message" required></textarea>
+
+         <button className="px-4 py-2 font-bold text-white bg-black border-black rounded hover:bg-transparent hover:text-black hover:border" type="submit">Contact Me</button>
+      </form>
+   </div>
    </div>
 
   )
