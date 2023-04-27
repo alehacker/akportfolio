@@ -13,8 +13,11 @@ function Home() {
      emailjs.sendForm('service_w4z1kst', 'template_1toztug', form.current, 'XURGSFAu2BrpOMaWQ')
        .then((result) => {
            // show the user a success message
+           alert('Email sent successfully!')
+           form.current.reset();
        }, (error) => {
            // show the user an error
+           alert('Error sending Email, try again.')
        });
    };
    
@@ -36,6 +39,10 @@ function Home() {
                <a href="https://www.linkedin.com/in/alejandra-kennedy/" className="object-contain object-center w-10 h-10 md:mb-0" target="_blank" rel="noopener noreferrer">
                   <img src='/images/linkediicon.png' alt='linkedin'/>
                </a>
+            </div>
+            
+            <div className="flex flex-row p-3 m-1 social md:p-2">
+               <button className = 'px-4 py-2 font-bold text-white bg-black border-black rounded hover:bg-transparent hover:text-black hover:border'><a href='/images/ALEJANDRA KENNEDY - Resume.pdf' target="_blank">Resume</a> </button>
             </div> 
          </div>
 
@@ -141,20 +148,20 @@ function Home() {
       </div>
    </div> */}
 
-   <div className="flex flex-row gap-3 justify-space home bg-aliceblue md:p-10 md:flex-row md:items-center md:justify-center">
+   <div className="flex flex-row gap-3 justify-space home contact bg-aliceblue md:p-10 md:flex-row md:items-center md:justify-center">
       <div className='flex flex-col'>
          <img className='mb-1 h-34' src='/images/aklogo.png' alt='Logo' />
       </div>
       
       <form className="flex flex-col flex-1 space-y-4" ref={form} onSubmit={sendEmail}>  
          <label className="font-semibold text-gray-700" for="user_name">Name</label>
-         <input className="px-3 py-2 border border-gray-400 rounded-lg" type="text" id="user_name" name="user_name" required />
+         <input className="px-3 py-2 rounded-lg" type="text" id="user_name" name="user_name" required />
 
          <label className="font-semibold text-gray-700" for="user_email">Email</label>
-         <input className="px-3 py-2 border border-gray-400 rounded-lg" type="email" id="user_email" name="user_email" required />
+         <input className="px-3 py-2 rounded-lg" type="email" id="user_email" name="user_email" required />
 
          <label className="font-semibold text-gray-700" for="message">Message</label>
-         <textarea className="px-3 py-2 border border-gray-400 rounded-lg" id="message" name="message" required></textarea>
+         <textarea className="px-3 py-2 rounded-lg" id="message" name="message" required></textarea>
 
          <button className="px-4 py-2 font-bold text-white bg-black border-black rounded hover:bg-transparent hover:text-black hover:border" type="submit">Contact Me</button>
       </form>
