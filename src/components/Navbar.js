@@ -4,7 +4,7 @@ import { Link as ScrollLink } from 'react-scroll';
 function Navbar() {
   return (
    <nav className='fixed top-0 z-10 flex flex-col items-center justify-between w-full p-5 px-8 bg-white h-44 scroll-m-0 md:flex-row md:h-50 font-mavenpro left-2' >
-      <div className='flex items-center order-1 p-1' >
+      <div className='flex items-center order-1 p-1 md:text-sm' >
          <ScrollLink className='mr-6 text-2xl text-gray-700 hover:text-indigo-600 ' to='home' spy={true} smooth={true} duration={500}>
             Home
          </ScrollLink>
