@@ -3,7 +3,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 function Navbar() {
   return (
-   <nav className='fixed top-0 z-10 flex flex-col items-center justify-between w-full p-5 px-8 bg-white h-44 scroll-m-0 md:flex-row font-mavenpro left-2' >
+   <nav className='fixed top-0 z-10 flex flex-col items-center justify-between w-full p-5 px-8 bg-white h-44 scroll-m-0 md:flex-row md:h-50 font-mavenpro left-2' >
       <div className='flex items-center order-1 p-1' >
          <ScrollLink className='mr-6 text-2xl text-gray-700 hover:text-indigo-600 ' to='home' spy={true} smooth={true} duration={500}>
             Home
@@ -20,7 +20,7 @@ function Navbar() {
       </div>
       <div className='md:order-1'>
          <ScrollLink className='' to='home' spy={true} smooth={true} duration={500}>
-            <img className='w-auto h-40 mb-1 md:w-auto md:h-24' src='/images/aklogo.png' alt='Logo' />
+            <img className='w-auto h-40 mb-1' src='/images/aklogo.png' alt='Logo' />
          </ScrollLink>
       </div>
    </nav>
