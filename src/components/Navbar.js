@@ -20,7 +20,7 @@ function Navbar() {
       </div>
       <div className='md:order-1'>
          <ScrollLink className='' to='home' spy={true} smooth={true} duration={500}>
-            <img className='w-auto h-40 mb-1' src='/images/aklogo.png' alt='Logo' />
+            <img className='w-auto h-40 mb-1 md:w-auto md:h-24' src='/images/aklogo.png' alt='Logo' />
          </ScrollLink>
       </div>
    </nav>
