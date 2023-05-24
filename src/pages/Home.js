@@ -21,7 +21,7 @@ function Home() {
    };
    
   return (
-   <div className='mt-60'>
+   <div className='mt-60 md:mt-72'>
 
       <div id='MainInfo' className="flex flex-col p-4 mt-56 home bg-aliceblue md:p-10 md:flex-row md:items-center md:justify-center">
          <div className="flex flex-col info md:p-10 md:justify-center ">
