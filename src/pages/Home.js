@@ -61,7 +61,7 @@ function Home() {
                <a href='https://pageturnerslounge.netlify.app/' target="_blank" rel="noopener noreferrer">
                   <h1 className="text-4xl font-bold leading-tight projectname md:leading-normal">The Page Turners Lounge</h1> 
                </a>  
-               <p className="mt-4 text-2xl leading-normal projectinfo md:mt-6">Teachers Resource Exchange is a site where teachers can upload and share teaching resources. This site was created using Express JS, Node JS, Handlebars, HTML, MongoDB, Bootstrap.Users can create accounts, browse and download resources.</p>
+               <p className="mt-4 text-2xl leading-normal projectinfo md:mt-6">The Page Turners Lounge is a web app for readers that love to share their passion.  This app was created using the MERN stack. It has three data models managed by a Mongo DB.</p>
                <div className="flex flex-row p-3 m-1 social md:p-2 ">
                   <a href="https://github.com/alehacker/page-turner-client" target="_blank" rel="noopener noreferrer"
                       className="object-contain object-center w-10 h-10 mb-2 md:mb-0 md:mr-2 ">
