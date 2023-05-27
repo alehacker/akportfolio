@@ -19,6 +19,12 @@ function Home() {
            alert('Error sending Email, try again.')
        });
    };
+
+   const email = 'example@example.com';
+   const subject = 'Hello';
+   const body = 'About Your Resume';
+
+   const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
    
   return (
    <div className='mt-60 md:mt-72'>
@@ -46,12 +52,20 @@ function Home() {
          </div>
 
          <div className="flex flex-col akphoto md:p-2">
+            <img src='/images/akprofilepic.png' alt='AKPhoto' className="w-full max-w-full mx-auto md:max-w-none md:w-48" />
+            <a href={mailtoLink} className='flex flex-row items-center justify-center gap-1 p-1 m-1 md:p-2'>
+            <img className='w-10 h-10 md:w-5 md:h-5' src='/images/emailicon.png' alt='email' />
+            <p className='p-1 text-xl'>Reach Out</p>
+            </a>
+         </div>
+
+         {/* <div className="flex flex-col akphoto md:p-2">
                <img src='/images/akprofilepic.png' alt='AKPhoto' className="w-full max-w-full mx-auto md:max-w-none md:w-48"/>
                <div className='flex flex-row items-center justify-center gap-1 p-1 m-1 md:p-2 ' >
                   <img className= 'w-10 h-10 md:w-5 md:h-5'src='/images/emailicon.png' alt='email'/>
                   <p className='p-1 text-xl'>Reach Out</p>
                </div>
-         </div>
+         </div> */}
       </div>
 
       <div className="flex flex-col gap-4 p-4 projects bg-aliceblue md:p-10 md:flex-row md:flex-wrap md:items-center md:justify-center">
